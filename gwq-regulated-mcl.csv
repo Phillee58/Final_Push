@@ -1,0 +1,11 @@
+﻿chemical,mcl,units 1,units 2,typical source
+Barium,1,mg/l,ppm,Discharges of oil drilling wastes and from metal refineries; erosion of natural deposits 
+Bromacil,70,ug/l,ppb,Herbicide
+Chlorobenzene,70,ug/l,ppb,"Pesticide additive, degreaser"
+"1,2-Dibromoethane",0.05,ug/l,ppb,Various natural and man-made sources 
+"2,4-D",70,ug/l,ppb,By-product of drinking water disinfection 
+Chromium,50,ug/l,ppb,"Discharge from electroplating factories, leather tanneries, wood preservation, chemical synthesis, refractory production, and textile manufacturing facilities; erosion of natural deposits "
+Nitrate,"1,000",ug/l,ppb,Runoff and leaching from fertilizer use; leaching from septic tanks and sewage; erosion of natural deposits 
+Total Trihalomethanes,80,ug/l,ppb,By-product of drinking water disinfection 
+Copper,"1,300",ug/l,ppb,Internal corrosion of household plumbing systems; erosion of natural deposits; leaching from wood preservatives 
+Lead,15,ug/l,ppb,Internal corrosion of household water plumbing systems; discharges from industrial manufacturers; erosion of natural deposits 
