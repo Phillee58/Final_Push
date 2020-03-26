@@ -1144,7 +1144,33 @@
         <style>
           <style-rule element='mark'>
             <encoding attr='size-bar' field='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[avg:results:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
-            <encoding attr='color' field='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[avg:results:qk]' palette='red_green_diverging_10_0' reverse='true' type='interpolated' />
+            <encoding attr='color' field='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[avg:results:qk]' reverse='true' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#ae123a</color>
+                <color>#bf193b</color>
+                <color>#ce253d</color>
+                <color>#dc3440</color>
+                <color>#e74545</color>
+                <color>#ef574c</color>
+                <color>#f46956</color>
+                <color>#f77c66</color>
+                <color>#fa8d75</color>
+                <color>#fc9c89</color>
+                <color>#feac9d</color>
+                <color>#ced7c3</color>
+                <color>#b5c1b9</color>
+                <color>#a2b8aa</color>
+                <color>#90af9b</color>
+                <color>#7ea68d</color>
+                <color>#6e9d7f</color>
+                <color>#5f9573</color>
+                <color>#518c66</color>
+                <color>#44835b</color>
+                <color>#387a50</color>
+                <color>#2d7146</color>
+                <color>#24693d</color>
+              </color-palette>
+            </encoding>
           </style-rule>
           <style-rule element='worksheet'>
             <format attr='display-field-labels' scope='cols' value='false' />

@@ -373,6 +373,287 @@
       <layout dim-ordering='alphabetic' dim-percentage='0.554156' measure-ordering='alphabetic' measure-percentage='0.445844' show-structure='true' />
       <style>
         <style-rule element='mark'>
+          <encoding attr='color' field='[none:county:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot; Del Norte County&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot; Nevada County&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot; Sonoma County&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Inyo County&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Tehama County&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot; Fresno County&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot; Marin County&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot; San Mateo County&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Calero County Park&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;San Diego County&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot; Butte County&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot; Modoc County&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot; Shasta County&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;El Dorado County&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Siskiyou County&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot; Imperial County&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot; Riverside County&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot; Trinity County&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Los Angeles County&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Yuba County&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot; El Dorado County&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot; Orange County&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot; Stanislaus County&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Kern County&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Tulare County&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot; Calaveras County&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot; Mono County&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot; Sierra County&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Fresno County&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Solano County&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot; Los Angeles County&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot; San Joaquin County&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Amador County&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Sacramento County&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot; Alameda County&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot; Mariposa County&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot; Santa Barbara County&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Colusa County&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;San Luis Obispo County&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot; Lake County&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot; San Diego County&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot; Yolo County&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Napa County&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot; Colusa County&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot; Monterey County&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot; Siskiyou County&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Glenn County&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Sonoma County&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot; Inyo County&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot; Sacramento County&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot; Tulare County&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Madera County&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot; Kern County&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot; San Benito County&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot; Tuolumne County&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Merced County&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot; Lassen County&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot; San Francisco City and County&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot; Yuba County&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Riverside County&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot; Madera County&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot; San Luis Obispo County&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Butte County&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;San Bernardino County&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot; Glenn County&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot; Placer County&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot; Sutter County&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Kings County&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Ventura County&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot; Contra Costa County&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot; Napa County&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot; Solano County&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Imperial County&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Stanislaus County&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot; Alpine County&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot; Mendocino County&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot; Santa Clara County&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;County Road 60&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Santa Barbara County&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot; Kings County&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot; San Bernardino County&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot; Ventura County&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Monterey County&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot; Humboldt County&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot; Plumas County&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot; Tehama County&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Lassen County&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Yolo County&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot; Amador County&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot; Merced County&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot; Santa Cruz County&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Del Norte County&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Shasta County&quot;</bucket>
+            </map>
+          </encoding>
           <encoding attr='color' field='[none:chemical:nk]' type='palette'>
             <map to='#499894'>
               <bucket>&quot;Aldicarb sulfone&quot;</bucket>
@@ -930,287 +1211,6 @@
               <bucket>&quot;Vanadium&quot;</bucket>
             </map>
           </encoding>
-          <encoding attr='color' field='[none:county:nk]' type='palette'>
-            <map to='#499894'>
-              <bucket>&quot; Del Norte County&quot;</bucket>
-            </map>
-            <map to='#499894'>
-              <bucket>&quot; Nevada County&quot;</bucket>
-            </map>
-            <map to='#499894'>
-              <bucket>&quot; Sonoma County&quot;</bucket>
-            </map>
-            <map to='#499894'>
-              <bucket>&quot;Inyo County&quot;</bucket>
-            </map>
-            <map to='#499894'>
-              <bucket>&quot;Tehama County&quot;</bucket>
-            </map>
-            <map to='#4e79a7'>
-              <bucket>&quot; Fresno County&quot;</bucket>
-            </map>
-            <map to='#4e79a7'>
-              <bucket>&quot; Marin County&quot;</bucket>
-            </map>
-            <map to='#4e79a7'>
-              <bucket>&quot; San Mateo County&quot;</bucket>
-            </map>
-            <map to='#4e79a7'>
-              <bucket>&quot;Calero County Park&quot;</bucket>
-            </map>
-            <map to='#4e79a7'>
-              <bucket>&quot;San Diego County&quot;</bucket>
-            </map>
-            <map to='#59a14f'>
-              <bucket>&quot; Butte County&quot;</bucket>
-            </map>
-            <map to='#59a14f'>
-              <bucket>&quot; Modoc County&quot;</bucket>
-            </map>
-            <map to='#59a14f'>
-              <bucket>&quot; Shasta County&quot;</bucket>
-            </map>
-            <map to='#59a14f'>
-              <bucket>&quot;El Dorado County&quot;</bucket>
-            </map>
-            <map to='#59a14f'>
-              <bucket>&quot;Siskiyou County&quot;</bucket>
-            </map>
-            <map to='#79706e'>
-              <bucket>&quot; Imperial County&quot;</bucket>
-            </map>
-            <map to='#79706e'>
-              <bucket>&quot; Riverside County&quot;</bucket>
-            </map>
-            <map to='#79706e'>
-              <bucket>&quot; Trinity County&quot;</bucket>
-            </map>
-            <map to='#79706e'>
-              <bucket>&quot;Los Angeles County&quot;</bucket>
-            </map>
-            <map to='#79706e'>
-              <bucket>&quot;Yuba County&quot;</bucket>
-            </map>
-            <map to='#86bcb6'>
-              <bucket>&quot; El Dorado County&quot;</bucket>
-            </map>
-            <map to='#86bcb6'>
-              <bucket>&quot; Orange County&quot;</bucket>
-            </map>
-            <map to='#86bcb6'>
-              <bucket>&quot; Stanislaus County&quot;</bucket>
-            </map>
-            <map to='#86bcb6'>
-              <bucket>&quot;Kern County&quot;</bucket>
-            </map>
-            <map to='#86bcb6'>
-              <bucket>&quot;Tulare County&quot;</bucket>
-            </map>
-            <map to='#8cd17d'>
-              <bucket>&quot; Calaveras County&quot;</bucket>
-            </map>
-            <map to='#8cd17d'>
-              <bucket>&quot; Mono County&quot;</bucket>
-            </map>
-            <map to='#8cd17d'>
-              <bucket>&quot; Sierra County&quot;</bucket>
-            </map>
-            <map to='#8cd17d'>
-              <bucket>&quot;Fresno County&quot;</bucket>
-            </map>
-            <map to='#8cd17d'>
-              <bucket>&quot;Solano County&quot;</bucket>
-            </map>
-            <map to='#9d7660'>
-              <bucket>&quot; Los Angeles County&quot;</bucket>
-            </map>
-            <map to='#9d7660'>
-              <bucket>&quot; San Joaquin County&quot;</bucket>
-            </map>
-            <map to='#9d7660'>
-              <bucket>&quot;Amador County&quot;</bucket>
-            </map>
-            <map to='#9d7660'>
-              <bucket>&quot;Sacramento County&quot;</bucket>
-            </map>
-            <map to='#a0cbe8'>
-              <bucket>&quot; Alameda County&quot;</bucket>
-            </map>
-            <map to='#a0cbe8'>
-              <bucket>&quot; Mariposa County&quot;</bucket>
-            </map>
-            <map to='#a0cbe8'>
-              <bucket>&quot; Santa Barbara County&quot;</bucket>
-            </map>
-            <map to='#a0cbe8'>
-              <bucket>&quot;Colusa County&quot;</bucket>
-            </map>
-            <map to='#a0cbe8'>
-              <bucket>&quot;San Luis Obispo County&quot;</bucket>
-            </map>
-            <map to='#b07aa1'>
-              <bucket>&quot; Lake County&quot;</bucket>
-            </map>
-            <map to='#b07aa1'>
-              <bucket>&quot; San Diego County&quot;</bucket>
-            </map>
-            <map to='#b07aa1'>
-              <bucket>&quot; Yolo County&quot;</bucket>
-            </map>
-            <map to='#b07aa1'>
-              <bucket>&quot;Napa County&quot;</bucket>
-            </map>
-            <map to='#b6992d'>
-              <bucket>&quot; Colusa County&quot;</bucket>
-            </map>
-            <map to='#b6992d'>
-              <bucket>&quot; Monterey County&quot;</bucket>
-            </map>
-            <map to='#b6992d'>
-              <bucket>&quot; Siskiyou County&quot;</bucket>
-            </map>
-            <map to='#b6992d'>
-              <bucket>&quot;Glenn County&quot;</bucket>
-            </map>
-            <map to='#b6992d'>
-              <bucket>&quot;Sonoma County&quot;</bucket>
-            </map>
-            <map to='#bab0ac'>
-              <bucket>&quot; Inyo County&quot;</bucket>
-            </map>
-            <map to='#bab0ac'>
-              <bucket>&quot; Sacramento County&quot;</bucket>
-            </map>
-            <map to='#bab0ac'>
-              <bucket>&quot; Tulare County&quot;</bucket>
-            </map>
-            <map to='#bab0ac'>
-              <bucket>&quot;Madera County&quot;</bucket>
-            </map>
-            <map to='#d37295'>
-              <bucket>&quot; Kern County&quot;</bucket>
-            </map>
-            <map to='#d37295'>
-              <bucket>&quot; San Benito County&quot;</bucket>
-            </map>
-            <map to='#d37295'>
-              <bucket>&quot; Tuolumne County&quot;</bucket>
-            </map>
-            <map to='#d37295'>
-              <bucket>&quot;Merced County&quot;</bucket>
-            </map>
-            <map to='#d4a6c8'>
-              <bucket>&quot; Lassen County&quot;</bucket>
-            </map>
-            <map to='#d4a6c8'>
-              <bucket>&quot; San Francisco City and County&quot;</bucket>
-            </map>
-            <map to='#d4a6c8'>
-              <bucket>&quot; Yuba County&quot;</bucket>
-            </map>
-            <map to='#d4a6c8'>
-              <bucket>&quot;Riverside County&quot;</bucket>
-            </map>
-            <map to='#d7b5a6'>
-              <bucket>&quot; Madera County&quot;</bucket>
-            </map>
-            <map to='#d7b5a6'>
-              <bucket>&quot; San Luis Obispo County&quot;</bucket>
-            </map>
-            <map to='#d7b5a6'>
-              <bucket>&quot;Butte County&quot;</bucket>
-            </map>
-            <map to='#d7b5a6'>
-              <bucket>&quot;San Bernardino County&quot;</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>&quot; Glenn County&quot;</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>&quot; Placer County&quot;</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>&quot; Sutter County&quot;</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>&quot;Kings County&quot;</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>&quot;Ventura County&quot;</bucket>
-            </map>
-            <map to='#f1ce63'>
-              <bucket>&quot; Contra Costa County&quot;</bucket>
-            </map>
-            <map to='#f1ce63'>
-              <bucket>&quot; Napa County&quot;</bucket>
-            </map>
-            <map to='#f1ce63'>
-              <bucket>&quot; Solano County&quot;</bucket>
-            </map>
-            <map to='#f1ce63'>
-              <bucket>&quot;Imperial County&quot;</bucket>
-            </map>
-            <map to='#f1ce63'>
-              <bucket>&quot;Stanislaus County&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot; Alpine County&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot; Mendocino County&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot; Santa Clara County&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;County Road 60&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;Santa Barbara County&quot;</bucket>
-            </map>
-            <map to='#fabfd2'>
-              <bucket>&quot; Kings County&quot;</bucket>
-            </map>
-            <map to='#fabfd2'>
-              <bucket>&quot; San Bernardino County&quot;</bucket>
-            </map>
-            <map to='#fabfd2'>
-              <bucket>&quot; Ventura County&quot;</bucket>
-            </map>
-            <map to='#fabfd2'>
-              <bucket>&quot;Monterey County&quot;</bucket>
-            </map>
-            <map to='#ff9d9a'>
-              <bucket>&quot; Humboldt County&quot;</bucket>
-            </map>
-            <map to='#ff9d9a'>
-              <bucket>&quot; Plumas County&quot;</bucket>
-            </map>
-            <map to='#ff9d9a'>
-              <bucket>&quot; Tehama County&quot;</bucket>
-            </map>
-            <map to='#ff9d9a'>
-              <bucket>&quot;Lassen County&quot;</bucket>
-            </map>
-            <map to='#ff9d9a'>
-              <bucket>&quot;Yolo County&quot;</bucket>
-            </map>
-            <map to='#ffbe7d'>
-              <bucket>&quot; Amador County&quot;</bucket>
-            </map>
-            <map to='#ffbe7d'>
-              <bucket>&quot; Merced County&quot;</bucket>
-            </map>
-            <map to='#ffbe7d'>
-              <bucket>&quot; Santa Cruz County&quot;</bucket>
-            </map>
-            <map to='#ffbe7d'>
-              <bucket>&quot;Del Norte County&quot;</bucket>
-            </map>
-            <map to='#ffbe7d'>
-              <bucket>&quot;Shasta County&quot;</bucket>
-            </map>
-          </encoding>
         </style-rule>
       </style>
       <semantic-values>
@@ -1222,7 +1222,7 @@
     <mapsource name='Tableau' />
   </mapsources>
   <worksheets>
-    <worksheet name='Average_Results_by_Contam'>
+    <worksheet name='Average_Results_by_Contam_Grid'>
       <layout-options>
         <title>
           <formatted-text>
@@ -1306,6 +1306,83 @@
         <cols>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok]</cols>
       </table>
       <simple-id uuid='{E2864AD9-7928-4892-AB02-A695C7044661}' />
+    </worksheet>
+    <worksheet name='Average_Results_by_Contam_Line'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='0'>Average Results by Comtaminant</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='wqi (my_wqi_db)' name='federated.0bxa25a1xj05od101y2xn1tbtyx8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bxa25a1xj05od101y2xn1tbtyx8'>
+            <column-instance column='[mcl]' derivation='Attribute' name='[attr:mcl:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[results]' derivation='Avg' name='[avg:results:qk]' pivot='key' type='quantitative' />
+            <column caption='Chemical (Mcl2)' datatype='string' name='[chemical (mcl2)]' role='dimension' type='nominal' />
+            <column caption='Chemical' datatype='string' name='[chemical]' role='dimension' type='nominal' />
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Mcl' datatype='real' name='[mcl]' role='measure' type='quantitative' />
+            <column-instance column='[chemical (mcl2)]' derivation='None' name='[none:chemical (mcl2):nk]' pivot='key' type='nominal' />
+            <column-instance column='[chemical]' derivation='None' name='[none:chemical:nk]' pivot='key' type='nominal' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+            <column caption='Results' datatype='real' name='[results]' role='measure' type='quantitative' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:chemical (mcl2):nk]'>
+            <groupfilter function='level-members' level='[none:chemical (mcl2):nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <alphabetic-sort column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:chemical:nk]' direction='ASC' />
+          <filter class='categorical' column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:county:nk]'>
+            <groupfilter function='level-members' level='[none:county:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok]'>
+            <groupfilter function='level-members' level='[yr:date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok]</column>
+            <column>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:county:nk]</column>
+            <column>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:chemical (mcl2):nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[avg:results:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[avg:results:qk]' palette='red_green_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:chemical:nk]' />
+              <text column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[avg:results:qk]' />
+              <lod column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[attr:mcl:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[avg:results:qk]</rows>
+        <cols>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok]</cols>
+      </table>
+      <simple-id uuid='{83704452-50AC-43BB-92D6-2772EE7EF6BB}' />
     </worksheet>
     <worksheet name='Contam_by_County'>
       <layout-options>
@@ -2334,7 +2411,7 @@
       </viewpoint>
       <simple-id uuid='{02887AA8-BBE4-4886-9AFE-3E90461411A1}' />
     </window>
-    <window class='worksheet' maximized='true' name='Average_Results_by_Contam'>
+    <window class='worksheet' name='Average_Results_by_Contam_Grid'>
       <cards>
         <edge name='left'>
           <strip size='161'>
@@ -2374,6 +2451,47 @@
         </highlight>
       </viewpoint>
       <simple-id uuid='{1E1D5A51-10F5-4328-9023-0A66BF6267B4}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Average_Results_by_Contam_Line'>
+      <cards>
+        <edge name='left'>
+          <strip size='161'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:chemical (mcl2):nk]' type='filter' />
+            <card param='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:county:nk]' type='filter' />
+            <card param='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:chemical:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:chemical (mcl2):nk]</field>
+            <field>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:chemical:nk]</field>
+            <field>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:county:nk]</field>
+            <field>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A39D4A5D-AE14-462C-AF3B-BC2CF6669BEB}' />
     </window>
     <window class='worksheet' name='Map_Surveys_by_County'>
       <cards>
@@ -2460,7 +2578,7 @@
     </window>
   </windows>
   <thumbnails>
-    <thumbnail height='116' name='Average_Results_by_Contam' width='192'>
+    <thumbnail height='116' name='Average_Results_by_Contam_Grid' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAAB0CAYAAADThz1kAAAACXBIWXMAAA7DAAAOwwHHb6hk
       AAAgAElEQVR4nO2deViUVRfAfzMM+zZswoAIKqAi7uJOmoapKWHuZi5ZZmhuqamplbuZ2WJY
       WkqlfibkiluIYu64Aoogioggo4AO+zYM3x8jo4ggKQrC++OZh2fuPfe85+p7eO9977nnioqK
@@ -2625,6 +2743,198 @@
       raw/sYnPe01j5puTOHbtFCuCfix322RV8+vxc8zbdQilSkVLexvWv+eNuYE+ADN7dmb4bwGk
       5eQxzqMNH7+mDjl4v1NrPtq8G4vpy6hvYYbfqP7ITI2EdYDnpbqtA7xoqsM6QGUiDIEEajWC
       AwjUaoTzAQRqNf8HRhXfHLx0+TgAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Average_Results_by_Contam_Line' width='192'>
+      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
     </thumbnail>
     <thumbnail height='192' name='Contam_by_County' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
