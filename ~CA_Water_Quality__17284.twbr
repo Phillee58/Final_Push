@@ -1,0 +1,2277 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20201.20.0219.0753                               -->
+<workbook source-build='2020.1.0 (20201.20.0219.0753)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style-theme name='classic' />
+  <datasources>
+    <datasource caption='wqi (my_wqi_db)' inline='true' name='federated.0bxa25a1xj05od101y2xn1tbtyx8' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='db-finalpush.cyij5rs8dhs1.us-west-1.rds.amazonaws.com' name='postgres.1pi5bl30imdwtw13fjts41avxy16'>
+            <connection authentication='username-password' class='postgres' dbname='my_wqi_db' odbc-native-protocol='' one-time-sql='' port='5432' server='db-finalpush.cyij5rs8dhs1.us-west-1.rds.amazonaws.com' username='root' />
+          </named-connection>
+        </named-connections>
+        <relation connection='postgres.1pi5bl30imdwtw13fjts41avxy16' name='wqi' table='[public].[wqi]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>well_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[well_id]</local-name>
+            <parent-name>[wqi]</parent-name>
+            <remote-alias>well_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>8190</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>results</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[results]</local-name>
+            <parent-name>[wqi]</parent-name>
+            <remote-alias>results</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>chemical</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[chemical]</local-name>
+            <parent-name>[wqi]</parent-name>
+            <remote-alias>chemical</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>8190</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[wqi]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_TYPE_DATE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_TYPE_DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>unit</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[unit]</local-name>
+            <parent-name>[wqi]</parent-name>
+            <remote-alias>unit</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>8190</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>qualifer</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[qualifer]</local-name>
+            <parent-name>[wqi]</parent-name>
+            <remote-alias>qualifer</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rl</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rl]</local-name>
+            <parent-name>[wqi]</parent-name>
+            <remote-alias>rl</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[wqi]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[wqi]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>17</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>well_type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[well_type]</local-name>
+            <parent-name>[wqi]</parent-name>
+            <remote-alias>well_type</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>8190</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>source</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[source]</local-name>
+            <parent-name>[wqi]</parent-name>
+            <remote-alias>source</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>8190</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>county</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[county]</local-name>
+            <parent-name>[wqi]</parent-name>
+            <remote-alias>county</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>8190</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Chemical' datatype='string' name='[chemical]' role='dimension' type='nominal' />
+      <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Qualifer' datatype='string' name='[qualifer]' role='dimension' type='nominal' />
+      <column caption='Results' datatype='real' name='[results]' role='measure' type='quantitative' />
+      <column caption='Rl' datatype='real' name='[rl]' role='measure' type='quantitative' />
+      <column caption='Source' datatype='string' name='[source]' role='dimension' type='nominal' />
+      <column caption='Unit' datatype='string' name='[unit]' role='dimension' type='nominal' />
+      <column caption='Well Id' datatype='string' name='[well_id]' role='dimension' type='nominal' />
+      <column caption='Well Type' datatype='string' name='[well_type]' role='dimension' type='nominal' />
+      <column-instance column='[chemical]' derivation='None' name='[none:chemical:nk]' pivot='key' type='nominal' />
+      <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.515192' measure-ordering='alphabetic' measure-percentage='0.484808' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:chemical:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Aldicarb sulfone&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Bromomethane&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Dichlorodifluoromethane&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Fluoride&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Iprodione&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Metribuzin&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Oxyfluorfen&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;sec-Butylbenzene&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Trimethoprim&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;1,2-Dibromoethane&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;1,2-Dichlorobenzene&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;ChromiumBFN&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Diuron&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Phorate&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Radium-228&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Sodium&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Specific Conductance&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Tritium (Hydrogen 3)&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Xylene, Isomers m &amp; p&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;2,4-D&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Antimony&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;DCPA (Dacthal)almonoacid&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Dieldrin&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Metalaxyl&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Methyl-tert-butyl etherÃŠ&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Molinate&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Tetrachloroethene&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Total Dissolved Solids&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Uranium&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;1,4-Dioxane&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Carbon tetrachloride&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Diazinon&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Diltiazem&#9;&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Naphthalene&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Phosphorus, Total Orthophosphate (as P)&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Picloram&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Silver&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Temperature&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;1,1-Dichloroethane&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Aldicarb&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;CLToluene2&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Eptam&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Fenamiphos&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;n-Propylbenzene&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Prometon&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Sulfate&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Thiabendazole&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;1,2,4-Trimethylbenzene&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Atrazine&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Bensulfuron-methyl&#9;&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Chloroform&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;DCPA (Dacthal)&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Iron&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Propanil&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;SeleniumVIN&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Vinyl chloride&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;1,2-DichloroetheneT&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;1,7-Dimethylxanthine&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Carbonate&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Chloride&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Copper&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Di-isopropyl ether&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;NO3NitriteN&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Norflurazon&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Tebuthiuron&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;1,1,2-Trichloroethane&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;1,3-Dichloropropene (Total)&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Boron&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Cobalt&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;DINOSeleniumB&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Hardness as CaCarbonate&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Magnesium&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Permethrin&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Radium-226&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Thallium&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;1,4-Dichlorobenzene&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Albuterol&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;AlkalinityB&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Bromide&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;CadmiumS&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Carbon-14&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;CLToluene4&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Fecal Coliform&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Nitrogen, Nitrate (as N)&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;1,2-DichloroetheneC&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Arsenic&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Cotinine&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Cypermethrin&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Dicamba&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Ethylbenzene&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Simazine&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Trichloroethene&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Trichlorofluoromethane&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;1,3,5-Trimethylbenzene&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Alachlor&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Ammonia-Ammonium (NH3-NH4) as N&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Bromoform&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Dehydronifedipine&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Lead&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Nitrite&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Oxamyl&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Xylenes&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Bromodichloromethane&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Cadmium&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Codeine&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Dichloromethane&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Hexazinone&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;MercuryE&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Methyl iodide&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;O-18/O-16 in NO3&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Trichlorofluoromethane3&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;1,1,2,2-Tetrachloroethane&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;1,2-Dibromo-3-chloropropane&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;1,2,4-Trichlorobenzene&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Acetaminophen&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Aluminum&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Bromacil&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Hexachlorobutadiene&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Iodide&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;TOC as Hexane&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;1,2-Dichloroethane&#9;&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Barium&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Cyanazine&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Cyanide&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Linuron&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Mercury&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Perchlorate&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Potassium&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Trifluralin&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;1,2-Dichloropropane&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;1,3-Dichlorobenzene&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Beryllium&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Dibromochloromethane&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Endosulfan sulfate&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Metolachlor&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Strontium&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Sulfamethoxazole&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Triclopyr&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Aldicarb sulfoxide&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Azinphos methyl&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Isopropylbenzene&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Nickel&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Prometryn&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Propargite&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Styrene&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Toluene&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Warfarin&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;1,1,1-Trichloroethane&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;1,2,3-Trichloropropane&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;4-Methyl-2-pentanone&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Calcium&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Dichlorprop&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Malathion&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;O-18/O-16 ratio&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Oxygen, Dissolved&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;tert-Butylbenzene&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Tungsten&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;AlkalinityCACarbonate&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Benzene&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Carbamazepine&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Dichlorovos&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Molybdenum&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;N-15/N-14, NO3&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;n-Nitrosodimethylamine&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;pH&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Zinc&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Alkalinity&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Chlorobenzene&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Dimethoate&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Diphenhydramine&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Lithium&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Methomyl&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;n-Butylbenzene&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Radon-222&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Selenium&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;1,1-Dichloroethene&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Bicarbonate&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Chromium&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Coliform&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;DCPA acid metabolites (a)&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Fonofos&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;H-2/H-1 ratio&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Manganese&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Thiobencarb&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Vanadium&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:county:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot; Del Norte County&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot; Nevada County&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot; Sonoma County&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Inyo County&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Tehama County&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot; Fresno County&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot; Marin County&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot; San Mateo County&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Calero County Park&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;San Diego County&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot; Butte County&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot; Modoc County&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot; Shasta County&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;El Dorado County&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Siskiyou County&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot; Imperial County&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot; Riverside County&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot; Trinity County&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Los Angeles County&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Yuba County&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot; El Dorado County&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot; Orange County&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot; Stanislaus County&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Kern County&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Tulare County&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot; Calaveras County&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot; Mono County&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot; Sierra County&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Fresno County&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Solano County&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot; Los Angeles County&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot; San Joaquin County&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Amador County&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Sacramento County&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot; Alameda County&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot; Mariposa County&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot; Santa Barbara County&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Colusa County&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;San Luis Obispo County&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot; Lake County&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot; San Diego County&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot; Yolo County&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Napa County&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot; Colusa County&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot; Monterey County&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot; Siskiyou County&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Glenn County&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Sonoma County&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot; Inyo County&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot; Sacramento County&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot; Tulare County&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Madera County&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot; Kern County&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot; San Benito County&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot; Tuolumne County&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Merced County&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot; Lassen County&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot; San Francisco City and County&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot; Yuba County&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Riverside County&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot; Madera County&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot; San Luis Obispo County&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Butte County&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;San Bernardino County&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot; Glenn County&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot; Placer County&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot; Sutter County&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Kings County&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Ventura County&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot; Contra Costa County&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot; Napa County&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot; Solano County&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Imperial County&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Stanislaus County&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot; Alpine County&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot; Mendocino County&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot; Santa Clara County&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;County Road 60&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Santa Barbara County&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot; Kings County&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot; San Bernardino County&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot; Ventura County&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Monterey County&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot; Humboldt County&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot; Plumas County&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot; Tehama County&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Lassen County&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Yolo County&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot; Amador County&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot; Merced County&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot; Santa Cruz County&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Del Norte County&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Shasta County&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Average_Results_by_Contam'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='0'>Average Results by Comtaminant</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='wqi (my_wqi_db)' name='federated.0bxa25a1xj05od101y2xn1tbtyx8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bxa25a1xj05od101y2xn1tbtyx8'>
+            <column-instance column='[results]' derivation='Avg' name='[avg:results:qk]' pivot='key' type='quantitative' />
+            <column caption='Chemical' datatype='string' name='[chemical]' role='dimension' type='nominal' />
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[chemical]' derivation='None' name='[none:chemical:nk]' pivot='key' type='nominal' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+            <column caption='Results' datatype='real' name='[results]' role='measure' type='quantitative' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:chemical:nk]'>
+            <groupfilter function='level-members' level='[none:chemical:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <alphabetic-sort column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:chemical:nk]' direction='ASC' />
+          <filter class='categorical' column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:county:nk]'>
+            <groupfilter function='level-members' level='[none:county:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok]'>
+            <groupfilter function='level-members' level='[yr:date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok]</column>
+            <column>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:county:nk]</column>
+            <column>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:chemical:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[avg:results:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[avg:results:qk]' reverse='true' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#ae123a</color>
+                <color>#bf193b</color>
+                <color>#ce253d</color>
+                <color>#dc3440</color>
+                <color>#e74545</color>
+                <color>#ef574c</color>
+                <color>#f46956</color>
+                <color>#f77c66</color>
+                <color>#fa8d75</color>
+                <color>#fc9c89</color>
+                <color>#feac9d</color>
+                <color>#ced7c3</color>
+                <color>#b5c1b9</color>
+                <color>#a2b8aa</color>
+                <color>#90af9b</color>
+                <color>#7ea68d</color>
+                <color>#6e9d7f</color>
+                <color>#5f9573</color>
+                <color>#518c66</color>
+                <color>#44835b</color>
+                <color>#387a50</color>
+                <color>#2d7146</color>
+                <color>#24693d</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[avg:results:qk]' />
+              <text column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[avg:results:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:chemical:nk]</rows>
+        <cols>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok]</cols>
+      </table>
+      <simple-id uuid='{E2864AD9-7928-4892-AB02-A695C7044661}' />
+    </worksheet>
+    <worksheet name='Contam_by_County'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='0'>Contaminant Counts by County</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='wqi (my_wqi_db)' name='federated.0bxa25a1xj05od101y2xn1tbtyx8' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0bxa25a1xj05od101y2xn1tbtyx8'>
+            <column caption='Chemical' datatype='string' name='[chemical]' role='dimension' type='nominal' />
+            <column-instance column='[chemical]' derivation='Count' name='[cnt:chemical:qk]' pivot='key' type='quantitative' />
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[chemical]' derivation='None' name='[none:chemical:nk]' pivot='key' type='nominal' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:county:nk]'>
+            <groupfilter function='level-members' level='[none:county:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok]'>
+            <groupfilter function='level-members' level='[yr:date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok]</column>
+            <column>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:county:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[cnt:chemical:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[cnt:chemical:qk]' />
+              <text column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[cnt:chemical:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:county:nk] / [federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:chemical:nk])</rows>
+        <cols>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok]</cols>
+      </table>
+      <simple-id uuid='{25BBD7BF-3612-4889-A618-59617AB5240C}' />
+    </worksheet>
+    <worksheet name='Map_Surveys_by_County'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='0'>Surveys by County</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='wqi (my_wqi_db)' name='federated.0bxa25a1xj05od101y2xn1tbtyx8' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0bxa25a1xj05od101y2xn1tbtyx8'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[Number of Records]' derivation='Count' name='[cnt:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[county]' derivation='Count' name='[cnt:county:qk]' pivot='key' type='quantitative' />
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok]'>
+            <groupfilter function='level-members' level='[yr:date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[cnt:county:qk]' palette='blue_teal_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[cnt:Number of Records:qk]' />
+              <lod column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:county:nk]' />
+              <color column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[cnt:county:qk]' />
+              <geometry column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[Geometry (generated)]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>County:&#9;</run>
+                <run bold='true'>&lt;[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:county:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Total Surveys: </run>
+                <run bold='true'>&lt;[federated.0bxa25a1xj05od101y2xn1tbtyx8].[cnt:county:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[Latitude (generated)]</rows>
+        <cols>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{D0D411C8-AD92-4B3A-91AA-62108848E896}' />
+    </worksheet>
+    <worksheet name='Map_Surveys_by_Well'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='0'>Surveys by Well</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='wqi (my_wqi_db)' name='federated.0bxa25a1xj05od101y2xn1tbtyx8' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0bxa25a1xj05od101y2xn1tbtyx8'>
+            <column-instance column='[county]' derivation='Attribute' name='[attr:county:nk]' pivot='key' type='nominal' />
+            <column-instance column='[well_id]' derivation='Attribute' name='[attr:well_id:nk]' pivot='key' type='nominal' />
+            <column-instance column='[well_id]' derivation='Count' name='[cnt:well_id:qk]' pivot='key' type='quantitative' />
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[latitude]' derivation='None' name='[none:latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[longitude]' derivation='None' name='[none:longitude:qk]' pivot='key' type='quantitative' />
+            <column caption='Well Id' datatype='string' name='[well_id]' role='dimension' type='nominal' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok]'>
+            <groupfilter function='level-members' level='[yr:date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:longitude:qk]' field-type='quantitative' max='-12048574.640580153' min='-13798445.485166313' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:latitude:qk]' field-type='quantitative' max='4847735.2173261531' min='3760973.3397432333' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[cnt:well_id:qk]' palette='green_blue_diverging_10_0' type='interpolated' />
+            <encoding attr='size' field='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[cnt:well_id:qk]' field-type='quantitative' max-size='1' min-size='0' type='quantsize' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[cnt:well_id:qk]' />
+              <size column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[cnt:well_id:qk]' />
+              <tooltip column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[attr:well_id:nk]' />
+              <tooltip column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[attr:county:nk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Latitude:&#9;</run>
+                <run bold='true'>&lt;[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:latitude:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Longitude:&#9;</run>
+                <run bold='true'>&lt;[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:longitude:qk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>County:&#9;</run>
+                <run bold='true'>&lt;[federated.0bxa25a1xj05od101y2xn1tbtyx8].[attr:county:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Well Id:&#9;</run>
+                <run bold='true'>&lt;[federated.0bxa25a1xj05od101y2xn1tbtyx8].[attr:well_id:nk]&gt;</run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Count of Well Id:&#9;</run>
+                <run bold='true'>&lt;[federated.0bxa25a1xj05od101y2xn1tbtyx8].[cnt:well_id:qk]&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.0093333721160889' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:latitude:qk]</rows>
+        <cols>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:longitude:qk]</cols>
+      </table>
+      <simple-id uuid='{8DED2CE9-A8B8-4083-955F-385FBAA458D7}' />
+    </worksheet>
+    <worksheet name='Survey_Annual_Volumes'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='0'>Annual Survey Points /w %Gain/Loss</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='wqi (my_wqi_db)' name='federated.0bxa25a1xj05od101y2xn1tbtyx8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bxa25a1xj05od101y2xn1tbtyx8'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[Number of Records]' derivation='Count' name='[cnt:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[Number of Records]' derivation='Count' name='[pcdf:cnt:Number of Records:qk]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-type='Rows' type='PctDiff'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[cnt:Number of Records:qk]' />
+              <text column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[pcdf:cnt:Number of Records:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[cnt:Number of Records:qk]</rows>
+        <cols>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok]</cols>
+      </table>
+      <simple-id uuid='{ECFCA075-6259-4FC7-BBA1-18DAD64C0D18}' />
+    </worksheet>
+    <worksheet name='Survey_Monthly_Volumes'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='0'>Quarterly Survey Points /w %Gain/Loss</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='wqi (my_wqi_db)' name='federated.0bxa25a1xj05od101y2xn1tbtyx8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bxa25a1xj05od101y2xn1tbtyx8'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[Number of Records]' derivation='Count' name='[cnt:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[Number of Records]' derivation='Count' name='[pcdf:cnt:Number of Records:qk]' pivot='key' type='quantitative'>
+              <table-calc diff-options='Relative' ordering-type='Rows' type='PctDiff'>
+                <address>
+                  <value>-1</value>
+                </address>
+              </table-calc>
+            </column-instance>
+            <column-instance column='[date]' derivation='Quarter' name='[qr:date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[sum:Number of Records:qk]' scope='rows' value='Number of Survey Points' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[cnt:Number of Records:qk]' />
+              <text column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[pcdf:cnt:Number of Records:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[sum:Number of Records:qk]</rows>
+        <cols>([federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok] / [federated.0bxa25a1xj05od101y2xn1tbtyx8].[qr:date:ok])</cols>
+      </table>
+      <simple-id uuid='{DB13AC54-2AA9-45A6-B5CC-985BA85F516A}' />
+    </worksheet>
+    <worksheet name='Total_Surveys_by_Contam'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='0'>Total Surveys by Comtaminant</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='wqi (my_wqi_db)' name='federated.0bxa25a1xj05od101y2xn1tbtyx8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bxa25a1xj05od101y2xn1tbtyx8'>
+            <column caption='Chemical' datatype='string' name='[chemical]' role='dimension' type='nominal' />
+            <column-instance column='[chemical]' derivation='Count' name='[cnt:chemical:qk]' pivot='key' type='quantitative' />
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[chemical]' derivation='None' name='[none:chemical:nk]' pivot='key' type='nominal' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:chemical:nk]'>
+            <groupfilter function='level-members' level='[none:chemical:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <alphabetic-sort column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:chemical:nk]' direction='ASC' />
+          <filter class='categorical' column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:county:nk]'>
+            <groupfilter function='level-members' level='[none:county:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok]'>
+            <groupfilter function='level-members' level='[yr:date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok]</column>
+            <column>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:county:nk]</column>
+            <column>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:chemical:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[cnt:chemical:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[cnt:chemical:qk]' />
+              <text column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[cnt:chemical:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:chemical:nk]</rows>
+        <cols>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok]</cols>
+      </table>
+      <simple-id uuid='{A24217DA-9541-42B0-81F3-F2800DE91EFB}' />
+    </worksheet>
+    <worksheet name='Total_Surveys_by_Contam (All)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='0'>Total Surveys by Comtaminant</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='wqi (my_wqi_db)' name='federated.0bxa25a1xj05od101y2xn1tbtyx8' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bxa25a1xj05od101y2xn1tbtyx8'>
+            <column caption='Chemical' datatype='string' name='[chemical]' role='dimension' type='nominal' />
+            <column-instance column='[chemical]' derivation='Count' name='[cnt:chemical:qk]' pivot='key' type='quantitative' />
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[chemical]' derivation='None' name='[none:chemical:nk]' pivot='key' type='nominal' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:chemical:nk]'>
+            <groupfilter function='level-members' level='[none:chemical:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:chemical:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Specific Conductance&quot;</bucket>
+              <bucket>&quot;1,3-Dichloropropene (Total)&quot;</bucket>
+              <bucket>&quot;1,2,3-Trichloropropane&quot;</bucket>
+              <bucket>&quot;Chromium&quot;</bucket>
+              <bucket>&quot;Methyl-tert-butyl etherÃŠ&quot;</bucket>
+              <bucket>&quot;Vinyl chloride&quot;</bucket>
+              <bucket>&quot;Trichloroethene&quot;</bucket>
+              <bucket>&quot;Styrene&quot;</bucket>
+              <bucket>&quot;sec-Butylbenzene&quot;</bucket>
+              <bucket>&quot;n-Propylbenzene&quot;</bucket>
+              <bucket>&quot;Dibromochloromethane&quot;</bucket>
+              <bucket>&quot;Chlorobenzene&quot;</bucket>
+              <bucket>&quot;Carbon tetrachloride&quot;</bucket>
+              <bucket>&quot;Bromoform&quot;</bucket>
+              <bucket>&quot;Bromodichloromethane&quot;</bucket>
+              <bucket>&quot;Benzene&quot;</bucket>
+              <bucket>&quot;1,4-Dichlorobenzene&quot;</bucket>
+              <bucket>&quot;1,2,4-Trichlorobenzene&quot;</bucket>
+              <bucket>&quot;1,2-DichloroetheneT&quot;</bucket>
+              <bucket>&quot;1,2-Dichloroethane&#9;&quot;</bucket>
+              <bucket>&quot;1,2-Dichlorobenzene&quot;</bucket>
+              <bucket>&quot;1,1,2-Trichloroethane&quot;</bucket>
+              <bucket>&quot;1,1,1-Trichloroethane&quot;</bucket>
+              <bucket>&quot;1,1-Dichloroethene&quot;</bucket>
+              <bucket>&quot;Tetrachloroethene&quot;</bucket>
+              <bucket>&quot;Chloroform&quot;</bucket>
+              <bucket>&quot;Ethylbenzene&quot;</bucket>
+              <bucket>&quot;Toluene&quot;</bucket>
+              <bucket>&quot;Bromomethane&quot;</bucket>
+              <bucket>&quot;1,1-Dichloroethane&quot;</bucket>
+              <bucket>&quot;1,2-Dichloropropane&quot;</bucket>
+              <bucket>&quot;n-Butylbenzene&quot;</bucket>
+              <bucket>&quot;Naphthalene&quot;</bucket>
+              <bucket>&quot;Xylenes&quot;</bucket>
+              <bucket>&quot;Dichloromethane&quot;</bucket>
+              <bucket>&quot;pH&quot;</bucket>
+              <bucket>&quot;CadmiumS&quot;</bucket>
+              <bucket>&quot;1,2-Dibromo-3-chloropropane&quot;</bucket>
+              <bucket>&quot;Chloride&quot;</bucket>
+              <bucket>&quot;Barium&quot;</bucket>
+              <bucket>&quot;Sodium&quot;</bucket>
+              <bucket>&quot;Magnesium&quot;</bucket>
+              <bucket>&quot;Calcium&quot;</bucket>
+              <bucket>&quot;Manganese&quot;</bucket>
+              <bucket>&quot;Total Dissolved Solids&quot;</bucket>
+              <bucket>&quot;Iron&quot;</bucket>
+              <bucket>&quot;Arsenic&quot;</bucket>
+              <bucket>&quot;Nickel&quot;</bucket>
+              <bucket>&quot;Fluoride&quot;</bucket>
+              <bucket>&quot;Sulfate&quot;</bucket>
+              <bucket>&quot;Beryllium&quot;</bucket>
+              <bucket>&quot;Selenium&quot;</bucket>
+              <bucket>&quot;Silver&quot;</bucket>
+              <bucket>&quot;Lead&quot;</bucket>
+              <bucket>&quot;Cadmium&quot;</bucket>
+              <bucket>&quot;Zinc&quot;</bucket>
+              <bucket>&quot;Nitrogen, Nitrate (as N)&quot;</bucket>
+              <bucket>&quot;Aluminum&quot;</bucket>
+              <bucket>&quot;Copper&quot;</bucket>
+              <bucket>&quot;Potassium&quot;</bucket>
+              <bucket>&quot;1,2-Dibromoethane&quot;</bucket>
+              <bucket>&quot;Hardness as CaCarbonate&quot;</bucket>
+              <bucket>&quot;O-18/O-16 ratio&quot;</bucket>
+              <bucket>&quot;H-2/H-1 ratio&quot;</bucket>
+              <bucket>&quot;Metalaxyl&quot;</bucket>
+              <bucket>&quot;SeleniumVIN&quot;</bucket>
+              <bucket>&quot;Trichlorofluoromethane&quot;</bucket>
+              <bucket>&quot;Isopropylbenzene&quot;</bucket>
+              <bucket>&quot;Dichlorodifluoromethane&quot;</bucket>
+              <bucket>&quot;CLToluene2&quot;</bucket>
+              <bucket>&quot;1,3-Dichlorobenzene&quot;</bucket>
+              <bucket>&quot;Alkalinity&quot;</bucket>
+              <bucket>&quot;Temperature&quot;</bucket>
+              <bucket>&quot;Nitrite&quot;</bucket>
+              <bucket>&quot;Trichlorofluoromethane3&quot;</bucket>
+              <bucket>&quot;AlkalinityCACarbonate&quot;</bucket>
+              <bucket>&quot;CLToluene4&quot;</bucket>
+              <bucket>&quot;1,1,2,2-Tetrachloroethane&quot;</bucket>
+              <bucket>&quot;NO3NitriteN&quot;</bucket>
+              <bucket>&quot;Perchlorate&quot;</bucket>
+              <bucket>&quot;Tritium (Hydrogen 3)&quot;</bucket>
+              <bucket>&quot;Boron&quot;</bucket>
+              <bucket>&quot;Oxygen, Dissolved&quot;</bucket>
+              <bucket>&quot;Vanadium&quot;</bucket>
+              <bucket>&quot;Uranium&quot;</bucket>
+              <bucket>&quot;Atrazine&quot;</bucket>
+              <bucket>&quot;Simazine&quot;</bucket>
+              <bucket>&quot;Prometryn&quot;</bucket>
+              <bucket>&quot;Metribuzin&quot;</bucket>
+              <bucket>&quot;Prometon&quot;</bucket>
+              <bucket>&quot;Metolachlor&quot;</bucket>
+              <bucket>&quot;Dimethoate&quot;</bucket>
+              <bucket>&quot;Diazinon&quot;</bucket>
+              <bucket>&quot;Alachlor&quot;</bucket>
+              <bucket>&quot;Hexazinone&quot;</bucket>
+              <bucket>&quot;Molybdenum&quot;</bucket>
+              <bucket>&quot;Bromide&quot;</bucket>
+              <bucket>&quot;Hexachlorobutadiene&quot;</bucket>
+              <bucket>&quot;Tebuthiuron&quot;</bucket>
+              <bucket>&quot;Trifluralin&quot;</bucket>
+              <bucket>&quot;Phorate&quot;</bucket>
+              <bucket>&quot;Permethrin&quot;</bucket>
+              <bucket>&quot;Malathion&quot;</bucket>
+              <bucket>&quot;Fonofos&quot;</bucket>
+              <bucket>&quot;Dieldrin&quot;</bucket>
+              <bucket>&quot;DCPA (Dacthal)&quot;</bucket>
+              <bucket>&quot;Cypermethrin&quot;</bucket>
+              <bucket>&quot;Azinphos methyl&quot;</bucket>
+              <bucket>&quot;Iprodione&quot;</bucket>
+              <bucket>&quot;Fenamiphos&quot;</bucket>
+              <bucket>&quot;Strontium&quot;</bucket>
+              <bucket>&quot;Lithium&quot;</bucket>
+              <bucket>&quot;Phosphorus, Total Orthophosphate (as P)&quot;</bucket>
+              <bucket>&quot;Ammonia-Ammonium (NH3-NH4) as N&quot;</bucket>
+              <bucket>&quot;Methyl iodide&quot;</bucket>
+              <bucket>&quot;Dichlorovos&quot;</bucket>
+              <bucket>&quot;Carbon-14&quot;</bucket>
+              <bucket>&quot;Iodide&quot;</bucket>
+              <bucket>&quot;Di-isopropyl ether&quot;</bucket>
+              <bucket>&quot;Mercury&quot;</bucket>
+              <bucket>&quot;ChromiumBFN&quot;</bucket>
+              <bucket>&quot;Cobalt&quot;</bucket>
+              <bucket>&quot;Tungsten&quot;</bucket>
+              <bucket>&quot;Thiobencarb&quot;</bucket>
+              <bucket>&quot;Molinate&quot;</bucket>
+              <bucket>&quot;Propanil&quot;</bucket>
+              <bucket>&quot;Cotinine&quot;</bucket>
+              <bucket>&quot;Warfarin&quot;</bucket>
+              <bucket>&quot;Trimethoprim&quot;</bucket>
+              <bucket>&quot;Thiabendazole&quot;</bucket>
+              <bucket>&quot;Sulfamethoxazole&quot;</bucket>
+              <bucket>&quot;Diphenhydramine&quot;</bucket>
+              <bucket>&quot;Diltiazem&#9;&quot;</bucket>
+              <bucket>&quot;Dehydronifedipine&quot;</bucket>
+              <bucket>&quot;Codeine&quot;</bucket>
+              <bucket>&quot;Carbamazepine&quot;</bucket>
+              <bucket>&quot;Albuterol&quot;</bucket>
+              <bucket>&quot;Acetaminophen&quot;</bucket>
+              <bucket>&quot;1,7-Dimethylxanthine&quot;</bucket>
+              <bucket>&quot;Cyanazine&quot;</bucket>
+              <bucket>&quot;Xylene, Isomers m &amp; p&quot;</bucket>
+              <bucket>&quot;Thallium&quot;</bucket>
+              <bucket>&quot;tert-Butylbenzene&quot;</bucket>
+              <bucket>&quot;Coliform&quot;</bucket>
+              <bucket>&quot;Antimony&quot;</bucket>
+              <bucket>&quot;1,2,4-Trimethylbenzene&quot;</bucket>
+              <bucket>&quot;1,2-DichloroetheneC&quot;</bucket>
+              <bucket>&quot;Propargite&quot;</bucket>
+              <bucket>&quot;Oxyfluorfen&quot;</bucket>
+              <bucket>&quot;Eptam&quot;</bucket>
+              <bucket>&quot;Endosulfan sulfate&quot;</bucket>
+              <bucket>&quot;Radon-222&quot;</bucket>
+              <bucket>&quot;1,4-Dioxane&quot;</bucket>
+              <bucket>&quot;1,3,5-Trimethylbenzene&quot;</bucket>
+              <bucket>&quot;MercuryE&quot;</bucket>
+              <bucket>&quot;n-Nitrosodimethylamine&quot;</bucket>
+              <bucket>&quot;AlkalinityB&quot;</bucket>
+              <bucket>&quot;Bromacil&quot;</bucket>
+              <bucket>&quot;Norflurazon&quot;</bucket>
+              <bucket>&quot;Linuron&quot;</bucket>
+              <bucket>&quot;Diuron&quot;</bucket>
+              <bucket>&quot;DINOSeleniumB&quot;</bucket>
+              <bucket>&quot;Dichlorprop&quot;</bucket>
+              <bucket>&quot;DCPA acid metabolites (a)&quot;</bucket>
+              <bucket>&quot;DCPA (Dacthal)almonoacid&quot;</bucket>
+              <bucket>&quot;Bensulfuron-methyl&#9;&quot;</bucket>
+              <bucket>&quot;Foaming Agents&quot;</bucket>
+              <bucket>&quot;Dicamba&quot;</bucket>
+              <bucket>&quot;Aldicarb sulfoxide&quot;</bucket>
+              <bucket>&quot;Aldicarb sulfone&quot;</bucket>
+              <bucket>&quot;Aldicarb&quot;</bucket>
+              <bucket>&quot;Triclopyr&quot;</bucket>
+              <bucket>&quot;Methomyl&quot;</bucket>
+              <bucket>&quot;Picloram&quot;</bucket>
+              <bucket>&quot;Oxamyl&quot;</bucket>
+              <bucket>&quot;O-18/O-16 in NO3&quot;</bucket>
+              <bucket>&quot;N-15/N-14, NO3&quot;</bucket>
+              <bucket>&quot;o-Xylene&quot;</bucket>
+              <bucket>&quot;Fecal Coliform&quot;</bucket>
+              <bucket>&quot;TOC as Hexane&quot;</bucket>
+              <bucket>&quot;Carbonate&quot;</bucket>
+              <bucket>&quot;Cyanide&quot;</bucket>
+              <bucket>&quot;Radium-228&quot;</bucket>
+              <bucket>&quot;Radium-226&quot;</bucket>
+              <bucket>&quot;4-Methyl-2-pentanone&quot;</bucket>
+              <bucket>&quot;Bicarbonate&quot;</bucket>
+              <bucket>&quot;Total Trihalomethanes&quot;</bucket>
+              <bucket>&quot;tert-Butyl alcohol&quot;</bucket>
+              <bucket>&quot;tert-Amyl methyl etherÃŠ&quot;</bucket>
+              <bucket>&quot;Ethyl tert-butyl ether&quot;</bucket>
+              <bucket>&quot;Acetone&quot;</bucket>
+              <bucket>&quot;Heptachlor&quot;</bucket>
+              <bucket>&quot;Alpha, Gross&quot;</bucket>
+              <bucket>&quot;2,4-D&quot;</bucket>
+              <bucket>&quot;Bentazon&quot;</bucket>
+              <bucket>&quot;BETA&quot;</bucket>
+              <bucket>&quot;Desethylatrazine&quot;</bucket>
+              <bucket>&quot;Pentachlorophenol&quot;</bucket>
+              <bucket>&quot;HChlorobenzene&quot;</bucket>
+              <bucket>&quot;bis(2-Ethylhexyl)adipate&quot;</bucket>
+              <bucket>&quot;Chromium6&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:county:nk]'>
+            <groupfilter function='level-members' level='[none:county:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok]'>
+            <groupfilter function='level-members' level='[yr:date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok]</column>
+            <column>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:county:nk]</column>
+            <column>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:chemical:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[cnt:chemical:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[cnt:chemical:qk]' />
+              <text column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[cnt:chemical:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:chemical:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{20420A01-3771-41A9-A840-9C7E47EE9A70}' />
+    </worksheet>
+    <worksheet name='Total_Surveys_by_County'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Surveys by County</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='wqi (my_wqi_db)' name='federated.0bxa25a1xj05od101y2xn1tbtyx8' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0bxa25a1xj05od101y2xn1tbtyx8'>
+            <column-instance column='[county]' derivation='Attribute' name='[attr:county:nk]' pivot='key' type='nominal' />
+            <column-instance column='[county]' derivation='Count' name='[cnt:county:qk]' pivot='key' type='quantitative' />
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date]' derivation='Year' name='[yr:date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:county:nk]'>
+            <groupfilter function='level-members' level='[none:county:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <alphabetic-sort column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:county:nk]' direction='ASC' />
+          <filter class='categorical' column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok]'>
+            <groupfilter function='level-members' level='[yr:date:ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok]</column>
+            <column>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:county:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[cnt:county:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[cnt:county:qk]' />
+              <text column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[cnt:county:qk]' />
+              <lod column='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[attr:county:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:county:nk]</rows>
+        <cols>[federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok]</cols>
+      </table>
+      <simple-id uuid='{A99A0B03-9616-4C88-A29F-3F039CFB1CC3}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Total_Surveys_by_County'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok]' type='filter' />
+            <card param='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:county:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[cnt:county:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F2D7211B-72E3-4388-B0B3-F21792E0C8D8}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Survey_Annual_Volumes'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0AEF7F4E-4935-4648-9B26-9DA9372FEC07}' />
+    </window>
+    <window class='worksheet' name='Survey_Monthly_Volumes'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D31F97E8-EEC1-4291-A68E-4A8B46E8D423}' />
+    </window>
+    <window class='worksheet' name='Total_Surveys_by_Contam'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok]' type='filter' />
+            <card param='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:county:nk]' type='filter' />
+            <card param='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:chemical:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[cnt:chemical:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0DB48556-5B4E-47CC-87C2-54BE1C6A500F}' />
+    </window>
+    <window class='worksheet' name='Total_Surveys_by_Contam (All)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok]' type='filter' />
+            <card param='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:county:nk]' type='filter' />
+            <card param='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:chemical:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[cnt:chemical:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C59316FC-F3D3-41FA-9EFD-359B0FACC6CB}' />
+    </window>
+    <window class='worksheet' name='Contam_by_County'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:county:nk]' type='filter' />
+            <card param='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[cnt:chemical:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{02887AA8-BBE4-4886-9AFE-3E90461411A1}' />
+    </window>
+    <window class='worksheet' name='Average_Results_by_Contam'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:chemical:nk]' type='filter' />
+            <card param='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[none:county:nk]' type='filter' />
+            <card param='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[avg:results:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1E1D5A51-10F5-4328-9023-0A66BF6267B4}' />
+    </window>
+    <window class='worksheet' name='Map_Surveys_by_County'>
+      <cards>
+        <edge name='left'>
+          <strip size='247'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[cnt:county:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{94529994-9835-414F-AB3C-22294F2E52CB}' />
+    </window>
+    <window class='worksheet' name='Map_Surveys_by_Well'>
+      <cards>
+        <edge name='left'>
+          <strip size='238'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[yr:date:ok]' type='filter' />
+            <card pane-specification-id='0' param='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[cnt:well_id:qk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0bxa25a1xj05od101y2xn1tbtyx8].[cnt:well_id:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{31DB0962-C86B-48BF-A4E7-EE6C7DC144BE}' />
+    </window>
+  </windows>
+</workbook>
